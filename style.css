@@ -125,7 +125,7 @@ main{
     }
 }
 main{
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 main #Home{
     position: relative;
@@ -170,7 +170,19 @@ main #Home .welcome a:hover{
 .img img{
     width: 600px;
 }
-.about{
+.animation{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animation.active{
+    transform: translateY(0px);
+    opacity: 1;
+    /* transition: all 2s ease; */
+}
+/* About */
+#About{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,14 +190,14 @@ main #Home .welcome a:hover{
     min-height: 75vh;
     position: relative;
     flex-wrap: wrap;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
-.about .content{
+#About .content{
     margin: 20px;
     width: 50%;
     padding: 0px 100px;
 }
-.about .content h2{
+#About .content h2{
     padding-left: 11px;
     width: 15vw;
     font-size: 3rem;
@@ -196,12 +208,12 @@ main #Home .welcome a:hover{
     margin-bottom: 20px;
 
 }
-.about .content p{
+#About .content p{
     max-width: 600px;
     text-align: justify;
     color: #dbd9d9;
 }
-.about .content #button{
+#About .content #button{
     display: inline-block;
     color: #fff;
     padding: 10px 20px;
@@ -213,7 +225,7 @@ main #Home .welcome a:hover{
     transition: background 200ms, color 200ms;
     cursor: pointer;
 }
-.about .content #button:hover{
+#About .content #button:hover{
     background:#1aeeef;
     color: #050e2d;
     box-shadow: 0 0 10px #1aeeef;
@@ -228,7 +240,7 @@ main #Home .welcome a:hover{
     align-items: center;
     flex-direction: column;
     margin: 40px ;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 #Game h2{
     color: #fff;
@@ -347,7 +359,7 @@ main #Home .welcome a:hover{
     align-items: center;
     height: 100%;
     flex-direction: column;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 #Tournament h2{
     color: #fff;
@@ -361,9 +373,6 @@ main #Home .welcome a:hover{
     height: 75vh;
     position: relative;
     width: 75vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 100px ;
     border: 2px solid black;
     border-radius: 50px;
